@@ -15,18 +15,13 @@ class SY2022bit033{
 	 
 	public static int getValidRegistrationCount(String[] registrations){
 		int validcount = 0;
-		int sum=0;
 		for(String reg_no : registrations){
 			if(validRegistration(reg_no)==true){
 			 	validcount++;
-			 	sum= sum +validcount;
 				}
-			else{
-				return 0;
-			}
 		}
 		
-		return sum;
+		return validcount;
 	}
 	
 	public static void main(String[] args){
@@ -45,4 +40,3 @@ class SY2022bit033{
     }
 		
 	}
-
